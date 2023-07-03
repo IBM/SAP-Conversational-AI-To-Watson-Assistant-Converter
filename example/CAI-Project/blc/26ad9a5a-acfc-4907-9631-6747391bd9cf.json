@@ -1,0 +1,29 @@
+[{
+	"id": "54fa8a5a-c2a7-47c4-b6ab-4cf0ffac7ced",
+	"public": true,
+	"description": "",
+	"slug": "getflightname",
+	"parent_bot_id": null,
+	"name": "getflightname",
+	"rating": 0,
+	"children_count": 0,
+	"is_privatisable": true,
+	"categories_count": 0,
+	"private_data": false,
+	"is_versioning_enabled": true,
+	"bot_type": "single",
+	"data_policy": {
+		"id": "aa92a856-b3bd-40d4-aad6-7df3c5879f83",
+		"data_type": "non_personal"
+	},
+	"store_conversation_data": false,
+	"version": {
+		"id": "ab9299b6-261b-421b-85f8-ecff826344c1",
+		"name": "v1",
+		"slug": "v1",
+		"bot_id": "54fa8a5a-c2a7-47c4-b6ab-4cf0ffac7ced",
+		"parent_version_id": null,
+		"is_forking": false
+	},
+	"bot_topics": []
+}]

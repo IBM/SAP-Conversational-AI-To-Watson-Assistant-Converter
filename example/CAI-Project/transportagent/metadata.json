@@ -1,0 +1,30 @@
+{
+	"bots": [{
+		"bot_id": "54fa8a5a-c2a7-47c4-b6ab-4cf0ffac7ced",
+		"version_id": "ab9299b6-261b-421b-85f8-ecff826344c1",
+		"bot_slug": "getflightname",
+		"version_slug": "v1"
+	}],
+	"services": [{
+		"name": "bc",
+		"content_version": "1.0.0"
+	}, {
+		"name": "csr",
+		"content_version": "1.0.0"
+	}, {
+		"name": "qna",
+		"content_version": "1.0.0"
+	}, {
+		"name": "blc",
+		"content_version": "1.0.0"
+	}, {
+		"name": "dm",
+		"content_version": "1.0.0"
+	}, {
+		"name": "train",
+		"content_version": "1.0.0"
+	}],
+	"alias": "h",
+	"checksum": "02D0D8956EFEA938896DD22C109AC52B41445CAC775294F4013DD719AA0A726411FBEB8473C7FAF91F62DB2C19F9DD83FBBAF8CB30A2DB18713C282A61E8C9A3",
+	"version": "2.0.0"
+}

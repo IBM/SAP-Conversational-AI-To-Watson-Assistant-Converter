@@ -1,0 +1,127 @@
+{
+	"bot_versions": [{
+		"skills": [{
+			"id": "b3511e72-557c-461f-87b2-717e2db308ae",
+			"requirement": {
+				"position": 0,
+				"id": "6a1f7e46-4a31-44d6-9dca-fca4ed3cec67",
+				"type": "and",
+				"data": null,
+				"children": [{
+					"position": 0,
+					"id": "24102d74-ef8c-4b65-a3d3-edfcd73f8043",
+					"type": "and",
+					"data": null,
+					"children": [{
+						"position": 0,
+						"id": "50b11154-519e-47d2-8567-b5aef044478c",
+						"type": "data",
+						"data": {
+							"id": "5a477ccf-5345-48cd-a534-ac5d524be31a",
+							"name": "airlinecode",
+							"field": "code",
+							"type": "entity"
+						},
+						"children": [],
+						"on_empty_condition": {
+							"actions": [{
+								"id": "8eeced87-8181-4fc9-b62e-930e3828a590",
+								"type": "message",
+								"value": null,
+								"message": [{
+									"id": "ada5bcbb-e253-4fe5-9b58-ec3afac57667",
+									"language": "en",
+									"value": "{\"type\":\"text\",\"content\":\"Enter Airline Code\",\"markdown\":false,\"delay\":null}",
+									"directSkillTriggers": [""]
+								}],
+								"position": 0
+							}],
+							"position": 0,
+							"id": "664dbf75-05d0-4e5a-9e53-1bb8b365a9c6",
+							"type": "and",
+							"children": [],
+							"operands": [],
+							"operator": null
+						},
+						"on_success_condition": null,
+						"on_validation_condition": null
+					}],
+					"on_empty_condition": null,
+					"on_success_condition": null,
+					"on_validation_condition": null
+				}],
+				"on_empty_condition": null,
+				"on_success_condition": null,
+				"on_validation_condition": null
+			},
+			"out_condition": {
+				"actions": [],
+				"position": 0,
+				"id": "5337b521-acbd-443f-839c-493c6b559cc5",
+				"type": "all",
+				"children": [{
+					"actions": [{
+						"id": "12379bed-2de8-431d-ae2a-74d40f716f3c",
+						"type": "http",
+						"value": null,
+						"message": [],
+						"position": 0
+					}, {
+						"id": "057ce353-7d67-43ec-831b-499ab551dfde",
+						"type": "message",
+						"value": null,
+						"message": [{
+							"id": "29f7cda2-a9c6-4b23-b8ed-0cc4df35eb18",
+							"language": "en",
+							"value": "{\"type\":\"text\",\"content\":\"{{api_service_response.aircode.body.response}}\",\"markdown\":false,\"delay\":null}",
+							"directSkillTriggers": [""]
+						}],
+						"position": 1
+					}, {
+						"id": "2ed10677-f9ce-45ae-ad73-821f99682543",
+						"type": "edit_memory",
+						"value": "{\"set\":[],\"unset\":[],\"reset\":true}",
+						"message": [],
+						"position": 2
+					}],
+					"position": 0,
+					"id": "39e7a42a-095f-4c2d-9e37-52a72806156a",
+					"type": "and",
+					"children": [{
+						"actions": [],
+						"position": 0,
+						"id": "0796dae2-47f7-4f8e-9c1f-b0cf3232e441",
+						"type": "and",
+						"children": [{
+							"actions": [],
+							"position": 0,
+							"id": "fecdfe0f-78fe-4939-a387-8829af20ff12",
+							"type": "data",
+							"children": [],
+							"operands": [{
+								"id": "f904e502-c439-4e08-866a-700ba3e17c55",
+								"language": "",
+								"type": "interpreted",
+								"value": "@getflightname",
+								"left": true,
+								"isLeft": true
+							}],
+							"operator": {
+								"id": "dbb2b46b-ee2f-4d69-9f1a-d92eed53786a",
+								"name": "is-present"
+							}
+						}],
+						"operands": [],
+						"operator": null
+					}],
+					"operands": [],
+					"operator": null
+				}],
+				"operands": [],
+				"operator": null
+			}
+		}],
+		"bot_id": "54fa8a5a-c2a7-47c4-b6ab-4cf0ffac7ced",
+		"version_id": "ab9299b6-261b-421b-85f8-ecff826344c1"
+	}]
+}

@@ -1,0 +1,43 @@
+{
+	"bot_versions": [{
+		"bot_id": "54fa8a5a-c2a7-47c4-b6ab-4cf0ffac7ced",
+		"version_id": "ab9299b6-261b-421b-85f8-ecff826344c1",
+		"web_requests": [{
+			"auth": null,
+			"body": {
+				"mode": "custom",
+				"id": null,
+				"parameters": "{\"case\":\"{{memory.code.raw}}\"}",
+				"template_name": null
+			},
+			"api_service_response": "aircode",
+			"header": {
+				"id": null,
+				"mode": "custom",
+				"parameters": "{\"Content-Type\":\"application/json\"}",
+				"template_name": null
+			},
+			"http_type": "POST",
+			"request_type": "service-api",
+			"url": "",
+			"base_url": null,
+			"collection": {
+				"collection_id": "b3511e72-557c-461f-87b2-717e2db308ae",
+				"collection_type": "skills"
+			},
+			"reference": {
+				"reference_id": "12379bed-2de8-431d-ae2a-74d40f716f3c",
+				"reference_type": "actions"
+			},
+			"response_mapping": null,
+			"include_headers": false,
+			"system_alias_used": false
+		}],
+		"templates": {
+			"header": [],
+			"body": []
+		},
+		"system_aliases": [],
+		"enable_system_aliases": false
+	}]
+}

@@ -1,0 +1,51 @@
+{
+	"bot_versions": [{
+		"id": "c9f24ad1-883a-453d-b36f-3b03d98b8a70",
+		"version_id": "ab9299b6-261b-421b-85f8-ecff826344c1",
+		"bot_id": "54fa8a5a-c2a7-47c4-b6ab-4cf0ffac7ced",
+		"slug": "v",
+		"skills": [{
+			"id": "b3511e72-557c-461f-87b2-717e2db308ae",
+			"name": "get flight",
+			"builder": {
+				"id": "c9f24ad1-883a-453d-b36f-3b03d98b8a70"
+			},
+			"slug": "get-flight",
+			"readme": "# README\n\n> You can update this readme to explain what your skill does.",
+			"ui": "{\"x\":10,\"y\":2}",
+			"in_condition": {
+				"id": "abd02337-08e0-4623-82cd-cb43c6b29c75",
+				"type": "and",
+				"position": 0,
+				"children": [{
+					"id": "1557d229-16bc-4abb-aab5-1becc4dcbdc9",
+					"type": "and",
+					"position": 0,
+					"children": [{
+						"id": "c6c668ea-a6a9-478a-acba-fe8c85d4b4aa",
+						"type": "data",
+						"position": 0,
+						"operator": {
+							"id": "is-present",
+							"name": "is-present"
+						},
+						"left": [{
+							"id": "8ca94c2d-eeae-4e32-8a5e-9c05d1d4dbf6",
+							"condition": {
+								"id": "c6c668ea-a6a9-478a-acba-fe8c85d4b4aa"
+							},
+							"is_left": true,
+							"type": "interpreted",
+							"value": "@getflightname"
+						}],
+						"right": {}
+					}]
+				}]
+			},
+			"is_active": true,
+			"skill_titles": [],
+			"type": "business"
+		}],
+		"skill_groups": []
+	}]
+}
